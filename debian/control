@@ -1,24 +1,23 @@
 Source: golang-github-tdewolff-test
+Section: golang
+Priority: optional
 Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
 Uploaders: Anthony Fok <foka@debian.org>
-Section: golang
-Testsuite: autopkgtest-pkg-go
-Priority: optional
+Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13),
-               dh-golang,
-               golang-any
-Standards-Version: 4.6.0
+               dh-sequence-golang,
+               golang-any (>= 2:1.18~)
+Testsuite: autopkgtest-pkg-go
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-tdewolff-test
 Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-tdewolff-test.git
 Homepage: https://github.com/tdewolff/test
-Rules-Requires-Root: no
 XS-Go-Import-Path: github.com/tdewolff/test
 
 Package: golang-github-tdewolff-test-dev
 Architecture: all
 Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
+Depends: ${misc:Depends}
 Description: Go test helper functions
  github.com/tdewolff/test is a helper package written in Go.
  It implements a few functions that are useful for io testing,

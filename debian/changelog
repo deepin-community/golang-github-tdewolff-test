@@ -1,8 +1,41 @@
-golang-github-tdewolff-test (1.0.6-3) UNRELEASED; urgency=medium
+golang-github-tdewolff-test (1.0.10+git20240106.7de5f7d-1) unstable; urgency=medium
 
-  * update
+  * New upstream version 1.0.10+git20240106.7de5f7d
 
- -- Debian Go Packaging Team <team+pkg-go@tracker.debian.org>  Wed, 25 May 2022 10:54:46 +0800
+ -- Anthony Fok <foka@debian.org>  Wed, 31 Jan 2024 06:04:32 -0700
+
+golang-github-tdewolff-test (1.0.10+git20231121.2d5236e-1) unstable; urgency=medium
+
+  * New upstream version 1.0.10+git20231121.2d5236e
+  * Bump build-dependency golang-any (>= 2:1.18~) as per go.mod
+  * Set debian/watch to track released tarballs again
+
+ -- Anthony Fok <foka@debian.org>  Sun, 10 Dec 2023 01:40:47 -0700
+
+golang-github-tdewolff-test (1.0.10-1) unstable; urgency=medium
+
+  * New upstream version 1.0.10
+
+ -- Anthony Fok <foka@debian.org>  Sun, 05 Nov 2023 08:18:35 -0700
+
+golang-github-tdewolff-test (1.0.9-1) unstable; urgency=medium
+
+  * New upstream version 1.0.9
+  * Bump Standards-Version to 4.6.2 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 21 Jun 2023 21:19:12 -0600
+
+golang-github-tdewolff-test (1.0.7-1) unstable; urgency=medium
+
+  * New upstream version 1.0.7
+  * Reorder fields in debian/control and debian/copyright
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * debian/rules: Invoke dh with --builddirectory=_build
+  * Revert "Install go.mod" in debian/rules, as dh-golang has been
+    installing go.mod and go.sum since 1.39 in Dec 2018.
+  * Bump Standards-Version to 4.6.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Mon, 29 Aug 2022 13:17:25 -0600
 
 golang-github-tdewolff-test (1.0.6-3) unstable; urgency=medium
 
