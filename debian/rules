@@ -1,6 +1,4 @@
 #!/usr/bin/make -f
 
-export DH_GOLANG_INSTALL_EXTRA := go.mod
-
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --builddirectory=_build --buildsystem=golang
